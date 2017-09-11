@@ -1,23 +1,32 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Customer List</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>Time (PDT)</ion-col>
+
+          <ion-col>Sent by</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>{{item.time}}</ion-col>
+
+          <ion-col>{{item.sentBy}}</ion-col>
+        </ion-row>
+      </ion-grid>
     </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  </ion-item-group>
 </ion-content>

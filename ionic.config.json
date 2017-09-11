@@ -1,5 +1,8 @@
 {
   "name": "mtc",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "f8ba6811",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
