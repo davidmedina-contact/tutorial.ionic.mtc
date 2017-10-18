@@ -1,26 +1,30 @@
+# MTC
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+## Meet the Customer
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+This is a very basic sample app that shows an application that allows managers to see customer appointments and dismiss them.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Not connected to real data, all you see is dummy.
 
-### With the Ionic CLI:
+This is not related to Wells Fargo by any means and it's used just demo purposes.
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## Instructions
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
+### On your favorite console/terminal/bash
+
+#### Clone this repo
+```shell
+git clone git@github.com:jdmedina/tutorial.ionic.mtc.git
 ```
 
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+#### Install dependencies
+```shell
+npm install
 ```
 
-Substitute ios for android if not on a Mac.
-
+#### Run the browser platform of cordova
+```shell
+ionic cordova run browser
+```
